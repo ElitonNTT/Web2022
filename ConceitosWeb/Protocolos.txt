@@ -1,0 +1,40 @@
+TCP -> Transmission Control Protocol/ Internet Protocol -> Orientado a Conexão e Confiável
+UDP -> Protocolo mais leve, não tão confiável. Usado quando é algo mais em tempo real e que perder alguns pacotes não faça tanta diferença. Ex: Streaming
+TCPIP -> Baseado em Layers (Camadas).
+Rede/Fisica -> Tipo de Conexão, Wifi, Física e Enlace, mac Address 
+Internet ->  IP - Endenreço, Conexão Entre Redes, Transferênca de Pacotes
+Transporte -> TCP/UDP 
+Aplicação -> HTTP, FTP, SMTP..., comunicação processo e processo, número da Porta
+
+IPV4 -> Existem 3 tipos de classe para IPV4
+    Classe A  (4 blocos, de 0 a 255)
+      192.168.100.130
+      (rede).(host).(host).(host)
+      Existem pouquissimas no mundo.
+      Máscara de SubRede (255.255.255.0), 255 significa, que é para rede, 0 para máquina
+    Classe B (4 Blocos, de 0 a 255)
+      192.168.100.230
+      (rede).(rede).(host).(host) 
+      Ainda dificil de ter, possível mente entregue aos provedores
+    Classe C (4 Blocos, de 0 a 255)
+      192.168.100.230
+      (rede).(rede).(rede).(host)
+      Mais comum, entregue por provedores
+
+Padrão do HTPP é a porta: 8080 (Muito comum em ambiente de Desenvolvimento usar as portas: 8000, 3003, 3000)
+Conceito de Portas -> 
+  Computador1 (10.85.0.4):
+    Skype
+    Chrome 
+    Apache
+    DropBox
+  Computador2 (10.85.0.5):
+    Github Desk
+    Chrome
+    Node :8080
+    MySql
+
+Para acessar o computador 2 usando o 1
+  Preciso saber do ip e da porta do processo.
+    usando chrome para acessar o node na porta 8080
+      http://10.85.0.5:8080

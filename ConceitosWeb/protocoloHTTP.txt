@@ -1,0 +1,27 @@
+HTTP -> HYPER TEXT TRANSFER PROTOCOL
+
+Caracteristicas -> Camada de Aplicação, "linguagem de alto nivel"
+Stateless -> Sempre criando uma nova comunicação. Toda conexão é feita como se fosse a primeira vez
+Cliente-Servidor ->  Requisição para servidor e recebe uma resposta
+TCP/IP
+Protocolo retorna arquivos para reenderizar sua página
+
+
+FLUXO DE UMA CONEXÃO HTPP
+
+BROWSER > URL > REQUISIÇÃO > USANDO HTTP > REQUISIÇÃO ENVIADA >
+SERVIDOR GERA RESPOSTA > BROWSER RECEBE A RESPOSTA E REENDERIZA NA TELA
+ ( SÃO VÁRIAS REQUISIÇÕES SIMULTÂNEAS)
+
+
+ METODOS > GET E POST principalmente, mas existem também, PUT / DELETE / TRACE / OPTIONS / CONNECT / HEAD
+
+GET -> CABEÇALHO / CORPO
+POST -> 
+
+STATUS DE RESPOSTA
+100 -> INFORMAÇÃO
+200 -> SUCESSO
+300 -> REDIRECIONAMENTO
+400 -> ERRO NO CLIENTE
+500 -> ERRO NO SERVIDOR

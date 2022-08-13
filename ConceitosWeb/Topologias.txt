@@ -1,0 +1,10 @@
+Topologia Centralizada -> Tem um ponto Central que distribui as comunicações, como um Switch principal que divide a internet
+Topologia Distribuida -> Vários pontos principais. Mesmo que um "switch" desligue, ainda existe comunicação
+
+WEB (teia) 
+Existem vários niveis de internet, provedores de ->
+nivel 1
+nivel 2
+nivel 3
+
+A internet é organizada como uma grande teia ao redor do Mundo, cabos submarinos ligando continentes, etc.

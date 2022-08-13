@@ -1,0 +1,7 @@
+body{
+  background-color: #544;
+  background-image: url(../imgs/logo.png);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  min-height: 100vh;
+}

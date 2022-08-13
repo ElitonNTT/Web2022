@@ -1,0 +1,5 @@
+1950 -> Computador Eletrônico
+1960 -> ARPANET - Departamento de Defesa Americano
+1970 -> TCP/IP - Robert E Kahn & Vint Cerf
+1980 -> WWW (World Wide Web ) - Tim Berners-Lee
+1990 -> Internet no Brasil

@@ -1,0 +1,9 @@
+package.json é um arquivo editável, muito útil se usado da maneira certa com seus scripts
+
+Ler a documentação vai ser um diferencial
+
+Podemos executar scripts padrões usando NPM Start / Stop / Restart
+E para executar scripts personalizados usamos NPM RUN personalizado
+
+Através dele podemos baixar as dependências previamentes salvas(node_modules), usando apenas "NPM install"
+com isso não precisamos enviar a pasta node_modules para o repositório, apenas o package.json
