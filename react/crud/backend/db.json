@@ -1,14 +1,9 @@
 {
   "users": [
     {
-      "name": "Eliton Netto",
-      "email": "netinho_ntt@hotmail.com",
-      "id": 3
-    },
-    {
       "name": "KatarinhaaOficial",
       "email": "teste@teste.com",
-      "id": 4
+      "id": 1
     }
   ]
 }
