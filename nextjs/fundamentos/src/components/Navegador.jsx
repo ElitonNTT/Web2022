@@ -6,7 +6,7 @@ export default function Navegador(props) {
       <Link href={props.destino}>
         <div
           className={styles.navegador}
-          style={{ backgroundColor: props.cor ?? "crimson" }}
+          style={{ backgroundColor: props.cor ?? "dodgerblue" }}
         >
           {props.texto}
         </div>
