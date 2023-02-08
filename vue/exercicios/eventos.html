@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
+    <script src="/js/vue.min.js"></script>
+  </head>
+  <body class="exercicio">
+    <div id="app">
+      <p>{{ contador }}</p>
+      <p>
+        <!-- @ substitui v-on (eventos) -->
+        <button v-on:click="add">Adicionar</button>
+        <button @click="contador -= 1">Subtrair</button>
+      </p>
+      <p @mousemove="atualizarPosicao">
+        Coodernadas: {{ x }} e {{ y }}
+        <!-- .stop e um modificador usado para parar eventos -->
+        <span @mousemove.stop>Aqui Nao</span>
+      </p>
+      <!-- keyup para eventos do teclado (enter pode ser substituido) -->
+      <input type="text" @keyup.enter="alerta" />
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          contador: 0,
+          x: 0,
+          y: 0,
+        },
+        methods: {
+          add() {
+            this.contador++;
+          },
+          atualizarPosicao(e) {
+            this.x = e.clientX;
+            this.y = e.clientY;
+          },
+          alerta() {
+            alert("Enter");
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

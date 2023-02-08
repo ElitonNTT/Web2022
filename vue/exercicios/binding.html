@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Binding</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
+    <script src="/js/vue.min.js"></script>
+  </head>
+  <body class="exercicio">
+    <div id="app">
+      <p>Canal: {{ link }}</p>
+      <p><a href="{{link}}">Canal</a></p>
+      <p><a v-bind:href="link">Canal 2 </a></p>
+      <!-- v-bind e uma diretiva do Vue, para interpolar -->
+      <p><a :href="link">Canal 3 </a></p>
+      <p>
+        <!-- v-model atualiza em duas "direcoes" -->
+        <input type="text" v-model="nome" /><br />
+        <span>{{nome}}</span>
+      </p>
+      <p>
+        <!-- mesmo exemplo usando value e nao v-model, apenas o v-bind -->
+        <input type="text" :value="nome" /><br />
+        <span>{{nome}}</span>
+      </p>
+    </div>
+
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          nome: "Danny",
+          link: "https://youtube.com/katarinhaa",
+        },
+        watch: {
+          // como array de dependencias do useEffect, sempre que alterar o valor, a function roda
+          nome(novoValor) {
+            console.log(novoValor.toUpperCase());
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
