@@ -1,0 +1,13 @@
+mat-card-title {
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+button {
+  width: min-content;
+  margin: 1rem;
+}
